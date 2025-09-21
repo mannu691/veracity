@@ -17,21 +17,23 @@ import {
   RefreshCwIcon,
   Square,
 } from "lucide-react";
-import type { FC } from "react";
+import {  type FC } from "react";
 
 import {
   ComposerAddAttachment,
   ComposerAttachments,
   UserMessageAttachments,
 } from "@/components/assistant-ui/attachment";
-import { MarkdownText } from "@/components/assistant-ui/markdown-text";
 import { ToolFallback } from "@/components/assistant-ui/tool-fallback";
 import { TooltipIconButton } from "@/components/assistant-ui/tooltip-icon-button";
 import { Button } from "@/components/ui/button";
 import { cn } from "@/lib/utils";
 import { LazyMotion, MotionConfig, domAnimation } from "motion/react";
 import * as m from "motion/react-m";
+import ResultRender from "./result-render";
 
+const renderer = (ResultRender);
+// const renderer = memo(ResultRender);
 export const Thread: FC = () => {
   return (
     <LazyMotion features={domAnimation}>
@@ -245,7 +247,8 @@ const AssistantMessage: FC = () => {
         <div className="aui-assistant-message-content mx-2 leading-7 break-words text-foreground">
           <MessagePrimitive.Parts
             components={{
-              Text: MarkdownText,
+              // Text: MarkdownText,
+              Text:renderer,
               tools: { Fallback: ToolFallback },
             }}
           />
