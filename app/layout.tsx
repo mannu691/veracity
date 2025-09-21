@@ -13,7 +13,7 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Truth Lens App",
+  title: "Veracity AI",
   description: "Real-time misinformation detection and fact-checking for content, links, and claims.",
 };
 

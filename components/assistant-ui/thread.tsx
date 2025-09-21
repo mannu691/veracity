@@ -113,27 +113,28 @@ const ThreadWelcomeSuggestions: FC = () => {
   return (
     <div className="aui-thread-welcome-suggestions grid w-full gap-2 @md:grid-cols-2">
       {[
-        {
-          title: "What's the weather",
-          label: "in San Francisco?",
-          action: "What's the weather in San Francisco?",
-        },
-        {
-          title: "Explain React hooks",
-          label: "like useState and useEffect",
-          action: "Explain React hooks like useState and useEffect",
-        },
-        {
-          title: "Write a SQL query",
-          label: "to find top customers",
-          action: "Write a SQL query to find top customers",
-        },
-        {
-          title: "Create a meal plan",
-          label: "for healthy weight loss",
-          action: "Create a meal plan for healthy weight loss",
-        },
-      ].map((suggestedAction, index) => (
+  {
+    "title": "Did Charlie Kirk commit murder?",
+    "label": "recent news claim about Charlie Kirk",
+    "action": "Charlie Kirk was involved in a murder as reported in recent headlines"
+  },
+  {
+    "title": "Is the 2025 Quebec City solar eclipse fake?",
+    "label": "viral claim about solar eclipse",
+    "action": "upcoming Quebec City solar eclipse in 2025 is real"
+  },
+  {
+    "title": "Did India cancel all private schools nationwide?",
+    "label": "allegation about education policy",
+    "action": "India officially banned private schools across the country"
+  },
+  {
+    "title": "Is COVID-19 vaccination linked to infertility?",
+    "label": "medical misinformation claim",
+    "action": "Investigate claims that COVID-19 vaccines cause infertility among women"
+  }
+]
+.map((suggestedAction, index) => (
         <m.div
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}

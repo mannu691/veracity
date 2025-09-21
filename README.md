@@ -1,11 +1,11 @@
-This is the [assistant-ui](https://github.com/Yonom/assistant-ui) starter project.
+This is the [Veracity AI](https://github.com/mannu691/veracity)
 
 ## Getting Started
 
-First, add your OpenAI API key to `.env.local` file:
+First, add your Gemini API key to `.env.local` file:
 
 ```
-OPENAI_API_KEY=sk-xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+GOOGLE_GENERATIVE_AI_API_KEY=
 ```
 
 Then, run the development server:
